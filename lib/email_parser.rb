@@ -9,4 +9,4 @@ class EmailParser
 		@emails = @emails.gsub(/[\s,]/ ," ").split
 		@emails.uniq
 	end
-	
+end
