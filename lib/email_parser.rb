@@ -1,13 +1,8 @@
 class EmailParser
-attr_accessor :emails
 
-def initialize(email)
-  @emails = email
-end
+  attr_reader :emails
 
-def parse
-  emails.delete(',').split.uniq
-end
-
-end 
+  def initialize(email)
+    @addresses_raw = addresses_string
+  end
 
